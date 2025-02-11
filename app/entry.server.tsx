@@ -16,7 +16,7 @@ import i18nOptions from './i18n';
 
 export const streamTimeout = 5_000;
 
-export default async function handleRequest(
+export default function handleRequest(
   request: Request,
   responseStatusCode: number,
   responseHeaders: Headers,
@@ -28,7 +28,7 @@ export default async function handleRequest(
     let lng = await i18nServer.getLocale(request);
     let ns = i18nServer.getRouteNamespaces(routerContext);
 
-    instance
+    await instance
       .use(initReactI18next) // Tell our instance to use react-i18next
       .use(Backend) // Setup our backend
       .init({

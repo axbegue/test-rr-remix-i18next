@@ -10,8 +10,6 @@ export function loader({ context }: Route.LoaderArgs) {
   return { message: context.VALUE_FROM_EXPRESS };
 }
 
-export const handle = { i18n: 'vendure' };
-
 export default function Home({ loaderData }: Route.ComponentProps) {
   const { t } = useTranslation('vendure');
 

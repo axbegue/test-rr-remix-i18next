@@ -43,13 +43,13 @@ export async function loader({ request }: Route.LoaderArgs) {
 //   );
 // }
 
-export const handle = { i18n: 'vendure' };
+export const handle = { i18n: ['common', 'vendure'] };
 
 export default function App({ loaderData }: Route.ComponentProps) {
   const { locale } = loaderData;
   // If you comment this 2 lines, the error disappears
-  // const { t, i18n } = useTranslation('vendure');
-  // useChangeLanguage(locale);
+  const { t, i18n } = useTranslation('vendure');
+  useChangeLanguage(locale);
 
   /* The error in browser is:
   Uncaught (in promise) ReferenceError: __reactRouterDataRouter is not defined at hmr-runtime:726:5
@@ -65,7 +65,7 @@ export default function App({ loaderData }: Route.ComponentProps) {
         <Links />
       </head>
       <body>
-        {/* <h1>{t('title')}</h1> */}
+        <h1>{t('title')}</h1>
         {/* <h1>{'vendure.title'}</h1> */}
         <Outlet />
         <ScrollRestoration />
