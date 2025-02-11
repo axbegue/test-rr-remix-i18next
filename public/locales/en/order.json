@@ -1,0 +1,40 @@
+{
+  "placedAt": "Date placed",
+  "totalSum": "Total sum",
+  "number": "Order number",
+  "actions": "Actions",
+  "actionsMessage": "Actions for this order (Not implemented)",
+  "expand": "Expand this order",
+  "notShipped": "Not shipped yet",
+  "trackAlert": "Here you'd need to Link your delivery service. Tracking code for this package is",
+  "trackPackage": "Track package",
+  "detailedOverview": "Detailed overview",
+  "summary": "Order summary",
+  "shippingAndHandling": "Shipping & handling:",
+  "totalWithoutTax": "Total before tax:",
+  "estimatedTax": "Estimated tax:",
+  "appliedCoupons": "Applied coupons:",
+  "total": "Total:",
+  "grandTotal": "Grand total:",
+  "historyEmpty": "Your future orders will appear here",
+  "historyEnd": "No more orders, end reached",
+  "items": {
+    "fulfilled": "items fulfilled",
+    "subtotal": "Item(s) Subtotal:"
+  },
+  "states": {
+    "Draft": "Draft",
+    "AddingItems": "Adding items",
+    "ArrangingPayment": "Awaiting payment",
+    "PaymentAuthorized": "Payment authorized",
+    "PaymentSettled": "Payment settled",
+    "PartiallyShipped": "Partially shipped",
+    "Shipped": "Shipped",
+    "PartiallyDelivered": "Partially delivered",
+    "Delivered": "Delivered",
+    "Modifying": "Modifying",
+    "ArrangingAdditionalPayment": "Awaiting payment",
+    "Cancelled": "Cancelled",
+    "Unknown": "Unknown"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "dummyPayment": "This is a dummy payment for demonstration purposes only",
+  "paymentErrorMessage": "There was an error processing the payment",
+  "payWith": "Pay with",
+  "deliveryMethod": "Delivery method",
+  "paymentProcessing": "Processing...",
+  "paymentLoading": "Loading options...",
+  "paymentMessage": "Note: your payment is still being processed. You will receive an email confirmation once the payment has completed.",
+  "pay": "Pay",
+  "progress": "Progress",
+  "orderNotFound": "No matching order found!",
+  "orderErrorTitle": "An error occured!",
+  "orderErrorMessage": "Unfortunately your payment could not be processed or this confirmation link has expired.",
+  "orderProcessing": "Please wait while we process your order...",
+  "orderSuccessMessage": "Your order has been received!",
+  "braintreeError": "Braintree error:",
+  "stripeError": "Stripe error:",
+  "detailsTitle": "Contact information",
+  "shippingTitle": "Shipping information",
+  "goToPayment": "Proceed to payment",
+  "steps": {
+    "shipping": "Shipping",
+    "payment": "Payment",
+    "confirmation": "Confirmation"
+  }
+}

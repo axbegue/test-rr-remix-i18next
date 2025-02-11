@@ -1,0 +1,19 @@
+{
+  "new": "New address",
+  "edit": "Edit address",
+  "company": "Company",
+  "streetLine1": "Address",
+  "streetLine2": "Apartment, suite, etc.",
+  "city": "City",
+  "country": "Country",
+  "selectCountry": "Select a country...",
+  "province": "State / Province",
+  "postalCode": "Postal code",
+  "phoneNumber": "Phone",
+  "idError": "Parameter 'id' is missing",
+  "deleteModal": {
+    "title": "Remove Address",
+    "confirmation": "Do you want to remove this address?",
+    "error": "Address could not be removed"
+  }
+}

@@ -1,9 +1,14 @@
 import type { Route } from './+types/root';
-import { isRouteErrorResponse, Links, Meta, Outlet, Scripts, ScrollRestoration } from 'react-router';
+import { isRouteErrorResponse, Links, Meta, Outlet, Scripts, ScrollRestoration, useLoaderData } from 'react-router';
 import i18nServer from '~/i18next.server';
 import { useTranslation } from 'react-i18next';
 import { useChangeLanguage } from 'remix-i18next/react';
 import './app.css';
+
+
+export let handle = {
+  i18n: ['common', 'vendure'],
+};
 
 export const links: Route.LinksFunction = () => [
   { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
@@ -47,28 +52,31 @@ export default function App({ loaderData }: Route.ComponentProps) {
   const { locale } = loaderData;
   // If you comment this 2 lines, the error disappears
   const { t, i18n } = useTranslation();
-  // useChangeLanguage(locale);
+  useChangeLanguage(locale);
 
   /* The error in browser is:
   Uncaught (in promise) ReferenceError: __reactRouterDataRouter is not defined at hmr-runtime:726:5
    */
 
   return (
-    //  <html lang={locale} dir={i18n.dir && i18n.dir()} id="app">
-    <html lang={locale} id="app">
-      <head>
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <Meta />
-        <Links />
-      </head>
-      <body>
-        {/* <h1>{t('vendure.title')}</h1> */}
-        {/* <h1>{'vendure.title'}</h1> */}
-        <Outlet />
-        <ScrollRestoration />
-        <Scripts />
-      </body>
+    <html lang={locale} dir={i18n.dir()} id="app">
+    <head>
+      <meta charSet="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <Meta />
+      <Links />
+    </head>
+    <body>
+    <h1>{t('tokenError')}</h1>
+    <h1>{t('vendure:title')}</h1>
+    {/*If you wanted to do the single file approach (as shown in es), you'd need to prefix your keys like you did before:*/}
+    <h1>{t('vendure.title')}</h1>
+
+
+    <Outlet />
+    <ScrollRestoration />
+    <Scripts />
+    </body>
     </html>
   );
 }

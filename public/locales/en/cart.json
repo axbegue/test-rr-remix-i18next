@@ -1,0 +1,6 @@
+{
+  "title": "Shopping cart",
+  "empty": "Your cart is empty",
+  "shippingMessage": "Shipping will be calculated at checkout.",
+  "checkout": "Checkout"
+}

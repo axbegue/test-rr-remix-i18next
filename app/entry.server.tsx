@@ -16,7 +16,7 @@ import i18nOptions from './i18n';
 
 export const streamTimeout = 5_000;
 
-export default async function handleRequest(
+export default function handleRequest(
   request: Request,
   responseStatusCode: number,
   responseHeaders: Headers,
@@ -28,22 +28,26 @@ export default async function handleRequest(
     let lng = await i18nServer.getLocale(request);
     let ns = i18nServer.getRouteNamespaces(routerContext);
 
-    instance
-      .use(initReactI18next) // Tell our instance to use react-i18next
-      .use(Backend) // Setup our backend
+    await instance
+      .use(initReactI18next)
+      .use(Backend)
       .init({
-        ...i18nOptions, // spread the configuration
-        lng, // The locale we detected above
-        ns, // The namespaces the routes about to render wants to use
-        backend: { loadPath: resolvePath('./public/locales/{{lng}}.json') },
+        ...i18nOptions,
+        lng,
+        ns,
+        backend: {
+          loadPath: resolvePath('./public/locales/{{lng}}/{{ns}}.json'),
+        },
       });
-
     let shellRendered = false;
     let userAgent = request.headers.get('user-agent');
 
     // Ensure requests from bots and SPA Mode renders wait for all content to load before responding
     // https://react.dev/reference/react-dom/server/renderToPipeableStream#waiting-for-all-content-to-load-for-crawlers-and-static-generation
-    let readyOption: keyof RenderToPipeableStreamOptions = (userAgent && isbot(userAgent)) || routerContext.isSpaMode ? 'onAllReady' : 'onShellReady';
+    let readyOption: keyof RenderToPipeableStreamOptions =
+      (userAgent && isbot(userAgent)) || routerContext.isSpaMode
+        ? 'onAllReady'
+        : 'onShellReady';
 
     const { pipe, abort } = renderToPipeableStream(
       <I18nextProvider i18n={instance}>
