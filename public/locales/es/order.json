@@ -1,0 +1,40 @@
+{
+  "placedAt": "Fecha de colocación",
+  "totalSum": "Suma total",
+  "number": "Número de orden",
+  "actions": "Comportamiento",
+  "actionsMessage": "Acciones para esta orden (No implementada)",
+  "expand": "Ampliar este pedido",
+  "notShipped": "No enviado aún",
+  "trackAlert": "Aquí deberá vincular su servicio de entrega. ",
+  "trackPackage": "Paquete de seguimiento",
+  "detailedOverview": "Descripción detallada",
+  "summary": "Resumen del pedido",
+  "shippingAndHandling": "Envío",
+  "totalWithoutTax": "Total antes de los impuestos:",
+  "estimatedTax": "Impuesto estimado:",
+  "appliedCoupons": "Cupones aplicados:",
+  "total": "Total:",
+  "grandTotal": "Gran total:",
+  "historyEmpty": "Tus futuros pedidos aparecerán aquí",
+  "historyEnd": "No más pedidos, final alcanzado",
+  "items": {
+    "fulfilled": "artículos cumplidos",
+    "subtotal": "Subtotal del artículo(s):"
+  },
+  "states": {
+    "Draft": "Borrador",
+    "AddingItems": "Agregar elementos",
+    "ArrangingPayment": "En espera de pago",
+    "PaymentAuthorized": "Pago autorizado",
+    "PaymentSettled": "Pago liquidado",
+    "PartiallyShipped": "Parcialmente Enviado",
+    "Shipped": "Enviado",
+    "PartiallyDelivered": "Parcialmente entregado",
+    "Delivered": "Entregado",
+    "Modifying": "Modificando",
+    "ArrangingAdditionalPayment": "En espera de pago",
+    "Cancelled": "Cancelado",
+    "Unknown": "Desconocido"
+  }
+}

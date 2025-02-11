@@ -1,0 +1,26 @@
+{
+  "dummyPayment": "Este es un pago ficticio únicamente con fines de demostración.",
+  "paymentErrorMessage": "Hubo un error al procesar el pago.",
+  "payWith": "Pagar con",
+  "deliveryMethod": "Método de entrega",
+  "paymentProcessing": "Procesando...",
+  "paymentLoading": "Cargando opciones...",
+  "paymentMessage": "Nota: su pago aún se está procesando. ",
+  "pay": "Pagar",
+  "progress": "Progreso",
+  "orderNotFound": "¡No se encontró ningún pedido coincidente!",
+  "orderErrorTitle": "¡Ocurrió un error!",
+  "orderErrorMessage": "Lamentablemente su pago no pudo ser procesado o este enlace de confirmación ha caducado.",
+  "orderProcessing": "Por favor espere mientras procesamos su orden...",
+  "orderSuccessMessage": "¡Tu orden ha sido recibida!",
+  "braintreeError": "Error de Braintree:",
+  "stripeError": "Error de raya:",
+  "detailsTitle": "Información del contacto",
+  "shippingTitle": "Información de envío",
+  "goToPayment": "Proceder al pago",
+  "steps": {
+    "shipping": "Envío",
+    "payment": "Pago",
+    "confirmation": "Confirmación"
+  }
+}

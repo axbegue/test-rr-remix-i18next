@@ -1,0 +1,19 @@
+{
+  "new": "Nueva direccion",
+  "edit": "Editar dirección",
+  "company": "Compañía",
+  "streetLine1": "DIRECCIÓN",
+  "streetLine2": "Apartamento, suite, etc.",
+  "city": "Ciudad",
+  "country": "País",
+  "selectCountry": "Seleccione un país...",
+  "province": "Provincia del estado",
+  "postalCode": "Código Postal",
+  "phoneNumber": "Teléfono",
+  "idError": "Falta el parámetro 'id'",
+  "deleteModal": {
+    "title": "Eliminar dirección",
+    "confirmation": "¿Quieres eliminar esta dirección?",
+    "error": "No se pudo eliminar la dirección"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "support": {
+    "help": "Ayuda",
+    "trackOrder": "Orden de pista",
+    "shipping": "Envío",
+    "returns": "Devoluciones"
+  },
+  "company": {
+    "about": "Acerca de",
+    "blog": "Blog",
+    "responsibility": "Responsabilidad Corporativa",
+    "press": "Prensa"
+  }
+}
