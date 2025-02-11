@@ -3,7 +3,7 @@ export default {
   supportedLngs: ['en', 'es'],
   // This is the language you want to use in case
   // if the user language is not in the supportedLngs
-  fallbackLng: 'es',
+  fallbackLng: 'en', // I put this here to demonstrate with separated translation files. Feel free to change that back if you figured out your approach!
   // The default namespace of i18next is "translation", but you can customize it here
   defaultNS: 'common',
   // react: { useSuspense: false }, // ABP Added

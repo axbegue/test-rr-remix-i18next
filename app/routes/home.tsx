@@ -1,5 +1,5 @@
 import type { Route } from './+types/home';
-import { Welcome } from '../welcome/welcome';
+import { Welcome } from '~/welcome/welcome';
 import { useTranslation } from 'react-i18next';
 
 export function meta({}: Route.MetaArgs) {
@@ -11,11 +11,11 @@ export function loader({ context }: Route.LoaderArgs) {
 }
 
 export default function Home({ loaderData }: Route.ComponentProps) {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation("vendure");
 
   return (
     <>
-      <h1>{t('vendure.title')}</h1>
+      <h1>{t('title')}</h1>
       <Welcome message={loaderData.message} />
     </>
   );

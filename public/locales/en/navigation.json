@@ -1,0 +1,14 @@
+{
+  "support": {
+    "help": "Help",
+    "trackOrder": "Track order",
+    "shipping": "Shipping",
+    "returns": "Returns"
+  },
+  "company": {
+    "about": "About",
+    "blog": "Blog",
+    "responsibility": "Corporate responsibility",
+    "press": "Press"
+  }
+}
